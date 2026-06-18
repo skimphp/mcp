@@ -1,0 +1,22 @@
+{
+  "name": "skim-mcp",
+  "version": "1.0.0",
+  "description": "SKIM MCP Platform - Local Distribution",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "skim-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build --compile --outfile=dist/skim-mcp-local src/index.ts",
+    "build:node": "bun build --target=node --outfile=dist/index.js src/index.ts",
+    "test": "bun test src/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+bin_path="$script_dir/../dist/skim-mcp-local"
+
+if [[ ! -f "$bin_path" ]]; then
+    echo "Binary not found: $bin_path" >&2
+    exit 1
+fi
+
+shift 0 2>/dev/null || true
+exec "$bin_path" "$@"
