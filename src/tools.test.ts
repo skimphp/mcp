@@ -51,7 +51,7 @@ describe("Tools", () => {
   test("skim_class returns class record", () => {
     const { loader, dir } = makeLoader({
       classes: [
-        { title: "router", class_name: "router", symbol: "skim\\router", layer: "core", entry_points: ["dispatch"], owns: ["route_collection"], see_also: ["request"], non_goals: ["HTTP client"] },
+        { title: "router", class_name: "router", symbol: "Skim\\Router", layer: "core", entry_points: ["dispatch"], owns: ["route_collection"], see_also: ["request"], non_goals: ["HTTP client"] },
       ],
     });
     cleanup.push(dir);

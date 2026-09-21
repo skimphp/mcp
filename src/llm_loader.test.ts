@@ -28,7 +28,7 @@ describe("LlmLoader", () => {
     const { dir, path } = makeFixture({
       generated_at: "2024-01-01T00:00:00Z",
       classes: [
-        { title: "cache", class_name: "cache", symbol: "skim\\cache\\cache", layer: "cache", role: "Facade" },
+        { title: "cache", class_name: "cache", symbol: "Skim\\Cache\\Cache", layer: "cache", role: "Facade" },
       ],
     });
     cleanup.push(dir);
