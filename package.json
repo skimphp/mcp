@@ -1,6 +1,6 @@
 {
   "name": "skim-mcp",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "SKIM MCP Platform - Local Distribution",
   "type": "module",
   "main": "dist/index.js",
