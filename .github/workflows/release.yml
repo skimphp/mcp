@@ -27,8 +27,6 @@ jobs:
             target: windows-x64
 
     runs-on: ${{ matrix.os }}
-    defaults:
-      run:
 
     steps:
       - uses: actions/checkout@v4
